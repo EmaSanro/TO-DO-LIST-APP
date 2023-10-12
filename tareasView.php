@@ -28,9 +28,16 @@ class TareasView {
                     <div class="divAgregar">
                         <form action="agregar" method="POST" class="formAgregar">
                             <label for="tarea">Tarea</label>
-                            <input class="datos" name="tarea" type="text" placeholder="Ingrese Tarea....."/>
+                            <input name="tarea" type="text" placeholder="Ingrese Tarea....."/>
                             <label for="Prioridad">Prioridad(1 menos importante - 6 mas importante)</label>
-                            <input class="datos" name="prioridad" type="number" min="1" max="6" placeholder="Prioridad.....">
+                            <select name="prioridad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
                             <button type="submit" class="btn agregar">Agregar Tarea</button>
                         </form>
                     </div>
